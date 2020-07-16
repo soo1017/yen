@@ -1,0 +1,68 @@
+
+<p><a href="#/" class="cls-back">Back to Search</a></p>
+
+<div class="cls-search-title">
+    Search Results for {{ sex }} {{ age }} {{ country }}
+</div>
+
+<div ng-repeat="rcp in searchResult" class="cls-result">
+<!--<div ng-repeat="rec in searchResult.data">-->
+    <div class="container">
+        <div class="row">
+            <div class="col1" ng-if="$even" ng-click="selectRecip($event)">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{ rcp.Name }}<span style="display:none">{{ rcp._id }}</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-body-img">
+                            <img src="{{ rcp.Picture }}" alt="Smiley face">
+                        </div>
+                        <div class="panel-body-text">
+                            <p>Gender: {{ rcp.Sex}}</p>
+                            <p>Age: {{ rcp.Age}}</p>
+                            <p>Birth: {{ rcp.Birth}}</p>
+                            <p>Country: {{ rcp.Country}}</p>
+                            <p>Favorite: {{ rcp.Favorite}}</p>
+                            <p>Future Dream: {{ rcp.FutureDream}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2" ng-if="$odd" ng-click="selectRecip($event)">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{ rcp.Name }}<span style="display:none">{{ rcp._id }}</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-body-img">
+                            <img src="{{ rcp.Picture }}" alt="Smiley face">
+                        </div>
+                        <div class="panel-body-text">
+                            <p>Gender: {{ rcp.Sex}}</p>
+                            <p>Age: {{ rcp.Age}}</p>
+                            <p>Birth: {{ rcp.Birth}}</p>
+                            <p>Country: {{ rcp.Country}}</p>
+                            <p>Favorite: {{ rcp.Favorite}}</p>
+                            <p>Future Dream: {{ rcp.FutureDream}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="col-6" ng-repeat="rcp in searchResult" ng-if="$even">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{ rcp.recipientName }}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <img src="{{ rcp.recipientPicture }}">
+                        <p>{{ rcp.recipientSex}}</p>
+                        <p>{{ rcp.recipientAge}}</p>
+                    </div>
+                </div>
+            </div>
+-->
+        </div>
+    </div>
+</div>

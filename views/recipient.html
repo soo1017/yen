@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/grid.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/recipient.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/queries-recipient.css">
+<!--        <link rel="shortcut icon" href="./images/favicon/faveu-favicon.ico" type="image/x-icon">-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Bungee" rel="stylesheet">
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        
+        <title>YEN</title>
+    </head>
+    <body>
+
+        <section class="cls-section-recipient js--recipient" id="id-recipient">
+            <div class="row cls-recipient1">
+                <h2>YEN</h2>
+            </div>
+            <form class="cls-recipient2">
+                <div class="container">
+<!--                    <label><b>Username</b></label>-->
+                    <input type="text" placeholder="Username" name="uname" id="id-username" required>
+
+                    <input type="password" placeholder="Old password" name="old-pwd" id="id-oldpwd" required style="display:none">
+<!--                    <label><b>Password</b></label>-->
+                    <input type="password" placeholder="Password" name="pwd" id="id-pwd" required>
+                    
+<!--                    <label><b>Password</b></label>-->
+                    <input type="password" placeholder="Confirm password" name="confirm-pwd" id="id-confirm-pwd" required style="display:none">
+
+                    <button type="submit" class="cls-login-btn">LOGIN</button>
+
+                </div>
+
+                <div class="container1">
+                    <button class="register">Register?</button>
+                    <button class="forgotpwd">Reset password?</button>
+                </div>
+                <div class="container2" style="display:none">
+                    <p class="cls-complaint">Already registered!</p>
+                </div>
+            </form>
+            
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="./../javascripts/jquery.waypoints.min.js"></script>
+    <script src="./../javascripts/recipient.js"></script>
+    </body>
+</html>

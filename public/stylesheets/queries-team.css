@@ -1,0 +1,253 @@
+
+/* Big Tablet to 1200px */
+@media only screen and (max-width: 1200px) {
+    .cls-maintext-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+    .main-nav { display: block; }
+}
+
+/* Small Tablet to Big Tablet */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 40px; }
+
+    .cls-about {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .main-nav { display: block; }
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-step { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+    .cls-phone { width: 100%; }
+    .icon-big {
+        font-size: 250%;
+        margin-bottom: 8px;
+    }
+    .box-image img {
+        width: 90%;
+        height: 150px;
+        margin-top: 50px;
+    }
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+    .contact-form { width: 80%; }
+    .cls-team1-row1 .cls-secondimg {
+        margin-left: 0px;
+    }
+    .cls-team1-row1 .cls-firstimg {
+        margin-left: 15px;
+    }
+    .section-team1 .cls-secondimg img {
+        border-radius: 50%;
+        height: 240px;
+        width: 240px;
+    }
+    .section-team1 .cls-firstimg img, 
+    .section-team1 .cls-thirdimg img {
+        margin-top: 40px;
+        border-radius: 50%;
+        height: 180px;
+        width: 180px;
+    }
+    .section-team1 .cls-thirdimg {
+        margin-left: 0px;
+    }
+    .section-team .row h2 {
+        font-size: 160%;
+        margin-bottom: 0px;
+    }
+    .section-team2 img,
+    .section-team3 img,
+    .section-team4 img,
+    .section-team5 img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    .section-team1:after,
+    .section-team2:after,
+    .section-team3:after,
+    .section-team4:after,
+    .section-team5:after {
+        margin: 20px auto;
+    }
+}
+
+/* Small Phone & Tablet from 480px to 767px */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 20px 0; }
+
+    .row { padding: 0 3%;}
+    .cls-maintext-box { padding: 0 4%; }
+    .cls-phone { width: 70%; }
+
+    .col { width: 100%; }
+
+    .box-image img {
+        width: 50%;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+    .main-nav {
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .main-nav11 {
+        float: left;
+        list-style: none;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 80%;
+    }
+    .main-nav11 li {
+        padding: 7px 0;
+    }
+    .main-nav11 li a:link,
+    .main-nav11 li a:visited {
+        text-decoration: none;
+        color: #fff;
+/*        color: #e67e22;*/
+        padding: 7px 0;
+        text-transform: uppercase;
+    }
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 7px 0;
+    }
+    .sticky .cls-logo {
+        margin: 20px 0 20px 0;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 7px 0;
+    }
+    .sticky .main-nav li a:hover,
+    .sticky .main-nav li a:active {
+        border-bottom: none;
+    }
+    .sticky .main-nav1 li a:hover,
+    .sticky .main-nav1 li a:active {
+        border-bottom: none;
+    }
+    .sticky .main-nav11 li a:link,
+    .sticky .main-nav11 li a:visited {
+        color: #e67e22;
+    }
+
+    .cls-short-p {
+        margin-bottom: 43px;
+    }
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+
+    .cls-about {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .footer-nav,
+    .social-links {
+        float: none;
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .footer-nav {
+        margin-bottom: 15px;
+    }
+    footer .row {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .steps-box:first-child {
+        /*margin-top: 60px;*/
+        text-align: center;
+    }
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+    .section-team1 .cls-firstimg {
+        margin-left: 0px;
+    }
+    .section-team1 .cls-firstimg img {
+        margin-top: 5px;
+    }
+    .section-team1 .cls-thirdimg img {
+        margin-top: 0px;
+    }
+    .section-team2 .cls-secondimg,
+    .section-team2 .cls-thirdimg,
+    .section-team3 .cls-secondimg,
+    .section-team3 .cls-thirdimg,
+    .section-team4 .cls-secondimg,
+    .section-team4 .cls-thirdimg,
+    .section-team5 .cls-secondimg,
+    .section-team5 .cls-thirdimg {
+        margin-left: 0px;
+    }
+}
+
+/* Small Phone from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section { padding: 20px 0; }
+    .main-nav {
+        margin-left: 5px;
+    }
+    .main-nav11 {
+        margin-left: 10px;
+    }
+    .footer-nav li {
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .social-links li {
+        margin: 15px 10px;
+    }
+    .contact-form {width: 100%; }
+    .section-team1 .cls-firstimg,
+    .section-team1 .cls-secondimg,
+    .section-team1 .cls-thirdimg {
+        margin-bottom: 10px;
+    }
+    .section-team2 .cls-firstimg p:last-child,
+    .section-team2 .cls-secondimg p:last-child,
+    .section-team2 .cls-thirdimg p:last-child,
+    .section-team3 .cls-firstimg p:last-child,
+    .section-team3 .cls-secondimg p:last-child,
+    .section-team3 .cls-thirdimg p:last-child,
+    .section-team4 .cls-firstimg p:last-child,
+    .section-team4 .cls-secondimg p:last-child,
+    .section-team4 .cls-thirdimg p:last-child,
+    .section-team5 .cls-firstimg p:last-child,
+    .section-team5 .cls-secondimg p:last-child,
+    .section-team5 .cls-thirdimg p:last-child {
+        margin-bottom: 15px;
+    } 
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="matchApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/grid.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/ionicons.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./stylesheets/match.css">
+<!--        <link rel="stylesheet" type="text/css" href="./stylesheets/queries-match.css">-->
+<!--        <link rel="stylesheet" type="text/css" href="./stylesheets/jquery.fancybox.min.css">-->
+<!--        <link rel="shortcut icon" href="./images/favicon/faveu-favicon.ico" type="image/x-icon">-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Bungee" rel="stylesheet">
+        <!-- load angular via CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.8/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.8/angular-resource.min.js"></script>
+        <title>YEN</title>
+    </head>
+    <body>
+        <header class="cls-head-match">
+            <nav class="navbar navbar-default">
+                <div class="row">
+<!--                    <a href="https://www.youthempoweringnation.org"><img src="./images/logo/yen-logo.png" alt="yen logo" class="cls-logo"></a>-->
+                    <div class="cls-backhome">
+                        <a href="https://www.youthempoweringnation.org/donate" class="cls-nav">Out</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+             <div ng-view class="cls-whole">
+
+             </div>
+        </div>
+       
+        <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="./javascripts/jquery.creditCardValidator.js"></script>
+        <script src="./javascripts/jquery.creditExpiryDateValidate.js"></script>
+        <script src="./javascripts/jquery.waypoints.min.js"></script>
+        <script src="./javascripts/match.js"></script>
+    </body>
+</html>

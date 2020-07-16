@@ -1,0 +1,245 @@
+
+/* Big Tablet to 1200px */
+@media only screen and (max-width: 1200px) {
+    .cls-maintext-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+    .main-nav { display: block; }
+}
+
+/* Small Tablet to Big Tablet */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px; }
+
+    .cls-about {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cls-about-row h1 {
+        font-size: 210%;
+    }
+    .cls-about-row1 h2 {
+        font-size: 120%;
+    }
+    .cls-about-row2 h2 {
+        font-size: 150%;
+    }
+    .cls-about-row3 h2 {
+        font-size: 170%;
+    }
+    .cls-about-row5 h2 {
+        font-size: 120%;
+    }
+    .cls-about-row4 .cls-firstcol {
+        padding-top: 20px;
+    }
+    .cls-about-row5 .cls-firstcol {
+        padding-top: 30px;
+    }
+    .cls-about-row6 .cls-firstcol ul {
+        margin-left: 10%;
+        font-size: 110%;
+    }
+
+    .main-nav { display: block; }
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-step { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+    .cls-phone { width: 100%; }
+    .icon-big {
+        font-size: 250%;
+        margin-bottom: 8px;
+    }
+    .box-image img {
+        width: 90%;
+        height: 150px;
+        margin-top: 50px;
+    }
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+    .contact-form { width: 80%; }
+}
+
+/* Small Phone & Tablet from 480px to 767px */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+
+    .row { padding: 0 3%;}
+    .cls-maintext-box { padding: 0 4%; }
+    .cls-phone { width: 70%; }
+
+    .col { width: 100%; }
+
+    .box-image img {
+        width: 50%;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+    .main-nav {
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .main-nav11 {
+        float: left;
+        list-style: none;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 80%;
+    }
+    .main-nav11 li {
+        padding: 7px 0;
+    }
+    .main-nav11 li a:link,
+    .main-nav11 li a:visited {
+        text-decoration: none;
+        color: #fff;
+/*        color: #e67e22;*/
+        padding: 7px 0;
+        text-transform: uppercase;
+    }
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 7px 0;
+    }
+    .sticky .cls-logo {
+        margin: 20px 0 20px 0;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 7px 0;
+    }
+    .sticky .main-nav li a:hover,
+    .sticky .main-nav li a:active {
+        border-bottom: none;
+    }
+    .sticky .main-nav1 li a:hover,
+    .sticky .main-nav1 li a:active {
+        border-bottom: none;
+    }
+    .sticky .main-nav11 li a:link,
+    .sticky .main-nav11 li a:visited {
+        color: #e67e22;
+    }
+
+    .cls-short-p {
+        margin-bottom: 43px;
+    }
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+
+    .cls-about {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .footer-nav,
+    .social-links {
+        float: none;
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .footer-nav {
+        margin-bottom: 15px;
+    }
+    footer .row {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .steps-box:first-child {
+        /*margin-top: 60px;*/
+        text-align: center;
+    }
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+    .cls-about-donate-btn {
+        font-size: 18px;
+    }
+    .cls-about-row2 .cls-firstcol {
+        padding-bottom: 20px;
+    }
+    .cls-about-row4 .cls-firstcol {
+        padding-bottom: 20px;
+    }
+    .cls-about-row5 .cls-firstcol {
+        padding-bottom: 20px;
+    }
+    .cls-about-row1 img,
+    .cls-about-row2 img,
+    .cls-about-row3 img,
+    .cls-about-row4 img,
+    .cls-about-row5 img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* Small Phone from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section { padding: 25px 0; }
+    .main-nav {
+        margin-left: 5px;
+    }
+    .main-nav11 {
+        margin-left: 10px;
+    }
+    .footer-nav li {
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .social-links li {
+        margin: 15px 10px;
+    }
+    .contact-form {width: 100%; }
+    .cls-about-row h1 {
+        font-size: 160%;
+    }
+    .cls-about-row2 h2 {
+        font-size: 130%;
+    }
+    .cls-about-row3 h2 {
+        font-size: 130%;
+    }
+    .cls-about-row6 h2 {
+        font-size: 140%;
+    }
+    .cls-about-donate-btn {
+        height: 42Px;
+        width: 200px;
+        font-size: 17px;
+        padding-top: 9px;
+        padding-bottom: 5px;
+    }
+    .cls-about-donate-btn:link, 
+    .cls-about-donate-btn:visited {
+        padding-top: 9px;
+        padding-bottom: 5px;
+    }
+}

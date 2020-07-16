@@ -1,0 +1,66 @@
+<div class="cls-whole1" ng-style="{'height': myHeight}">
+    <div class="cls-result-top">
+        <p><a href="#/" class="cls-back">Back to Search</a></p>
+        <a href="" class="cls-submit-btn" ng-click="submitChild()">Submit</a>
+<!--        <a ng-href="#!/thanks" class="cls-submit-btn" ng-click="submitChild()">Submit</a>-->
+    </div>
+
+    <div class="cls-search-title">
+        Search Results for {{ sex }} {{ age }} {{ country }}
+        <p class="cls-num-selection"> {{ child_number }} kid(s) to be selected</p>
+    </div>
+
+    <div ng-repeat="rcp in searchResult | limitTo: displayNum" class="cls-result">
+<!--    <div ng-repeat="rcp in searchResult" class="cls-result" set-height>-->
+<!--        <div class="container">-->
+            <div class="row">
+                <div class="col1" ng-if="$even" ng-click="selectRecip($event)">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{ rcp.Name }}<span style="display:none">{{ rcp._id }}</span></h3>
+                            <i class="ion-checkmark-round icon-select"></i>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-body-img">
+                                <img src="https://s3-us-west-2.amazonaws.com/yen-bucket/{{ rcp.Picture }}" alt="Smiley face">
+                            </div>
+                            <div class="panel-body-text">
+                                <p>Gender: {{ rcp.Sex}}</p>
+                                <p>Age: {{ rcp.Age}}</p>
+                                <p>Birth: {{ rcp.Birth}}</p>
+                                <p>Country: {{ rcp.Country}}</p>
+                                <p>Favorite: {{ rcp.Favorite}}</p>
+                                <p>Future Dream: {{ rcp.FutureDream}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2" ng-if="$odd" ng-click="selectRecip($event)">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"  ng-hide="rcp.Name == null">
+                            <h3 class="panel-title">{{ rcp.Name }}<span style="display:none">{{ rcp._id }}</span></h3>
+                            <i class="ion-checkmark-round icon-select"></i>
+                        </div>
+                        <div class="panel-body" ng-hide="rcp.Name == null">
+                            <div class="panel-body-img">
+                                <img src="https://s3-us-west-2.amazonaws.com/yen-bucket/{{ rcp.Picture }}" alt="Smiley face">
+                            </div>
+                            <div class="panel-body-text">
+                                <p>Gender: {{ rcp.Sex}}</p>
+                                <p>Age: {{ rcp.Age}}</p>
+                                <p>Birth: {{ rcp.Birth}}</p>
+                                <p>Country: {{ rcp.Country}}</p>
+                                <p>Favorite: {{ rcp.Favorite}}</p>
+                                <p>Future Dream: {{ rcp.FutureDream}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--        </div>-->
+    </div>
+</div>
+
+<div class="cls-showmore-div" ng-hide="displayNum >= searchResult.length">
+    <button ng-click="increaseBy(10)" class="cls-showmore-btn">Show More</button>
+</div>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/grid.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/contact.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/queries-contact.css">
+<!--        <link rel="shortcut icon" href="./images/favicon/faveu-favicon.ico" type="image/x-icon">-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Bungee" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./javascripts/contact.js"></script>
+        <title>YEN</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <a href="https://www.youthempoweringnation.org"><img src="./images/logo/yen-logo.png" alt="yen logo" class="cls-logo"></a>
+                    <ul class="main-nav js--main-div">
+                      <li><a href="https://www.youthempoweringnation.org/about" class="cls-eachnav1">About</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/mission" class="cls-eachnav2">Mission</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/#id-chapter" class="cls-eachnav3">Chapter</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/#id-mlocation" class="cls-eachnav4">Mission Location</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/donate" class="cls-eachnav5">Donate</a></li>
+                      <li class="cls-more"><i class="ion-android-more-vertical"></i></li>
+                    </ul>
+                    <ul class="main-nav11 js--main-div11" style="display: none;">
+                      <li><a href="https://www.youthempoweringnation.org/team" class="cls-subnav1">TEAM</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/faq" class="cls-subnav2">FAQ</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/contact" class="cls-subnav2">Contact Us</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--mobile-btn"><i class="ion-navicon-round"></i></a>
+                </div>
+                <div class="row cls-2row">
+                    <ul class="main-nav1 js--main-div1" style="display: none;">
+                      <li><a href="https://www.youthempoweringnation.org/team" class="cls-subnav1">TEAM</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/faq" class="cls-subnav2">FAQ</a></li>
+                      <li><a href="https://www.youthempoweringnation.org/contact" class="cls-subnav2">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cls-maintext-box">
+                <h1>HAND OUT TO HOLD THEIR HAND</h1>
+            </div>
+            <div class="cls-heart-div1">
+                <img src="./images/mainpage/heart.png" alt="heart" class="cls-heart1"  style="display: none">
+            </div>
+            <div class="cls-heart-div2">
+                <img src="./images/mainpage/heart.png" alt="heart" class="cls-heart2"  style="display: none">
+            </div>
+            <div class="cls-heart-div3">
+                <img src="./images/mainpage/heart.png" alt="heart" class="cls-heart3"  style="display: none">
+            </div>
+            <div class="cls-heart-div4">
+                <img src="./images/mainpage/heart.png" alt="heart" class="cls-heart4"  style="display: none">
+            </div>
+        </header>
+
+        <section class="section-form js--contact">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row cls-error-message" style="display:none;" align="center">
+                <p>Please fill all fields up</p>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="id-name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="id-email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message" id="id-textinput"></textarea>
+                        </div>
+                    </div>
+                    <div class="row cls-contact-btn-div0">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3 cls-contact-btn-div1">
+                            <input type="submit" value="Send it!" class="cls-contact-btn">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </section>
+        
+        <section class="section-thank js--thank" style="display:none;">
+            <div class="cls-yenlogo" id="id-yenlogo">
+                <img src="./images/logo/yen-logo.png" alt="yen-logo">
+            </div>
+            <div class="cls-thank-message" align="center">
+                <h3>Thank you! We will respond soon.</h3>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="https://www.youthempoweringnation.org/contact">Contact Us</a></li>
+                        <li><a href="https://www.youthempoweringnation.org/termsofuse">Terms of Use</a></li>
+                        <li><a href="https://www.youthempoweringnation.org/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Copyright &copy; 2017 by Youth Empowering Nation. All Rights Reserved</p>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="./javascripts/jquery.waypoints.min.js"></script>
+    </body>
+</html>

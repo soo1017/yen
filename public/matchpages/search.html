@@ -1,0 +1,27 @@
+<div class="row cls-whole1">
+    <h3 class="cls-search-main">Find Your Child</h3>
+    <form id="id-search-form" class="cls-search-form">
+                            
+<!--        <label class="cls-sex" for="sex"></label>-->
+        <select name="Gender" class="cls-sex" id="id-sex" ng-model="sex">
+            <option value="">Gender</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+        </select>
+                           
+<!--        <input type="text" class="cls-age" ng-model="age">-->
+        <input type="text" name="age" id="id-age" class="cls-age" placeholder="Age (Y or Y-Y and <18)" ng-model="age">
+                         
+<!--        <label class="cls-country" for="country"></label>-->
+        <select name="Country" class="cls-country" id="id-country" ng-model="country">
+            <option value="">Country</option>
+            <option value="US">United States</option>
+            <option value="Haiti">Haiti</option>
+        </select>
+                            
+        <a ng-href="{{ dspl==false ? '' : '#!/results' }}" class="cls-search-input" ng-click="verifyAge()">Search</a> 
+<!--        <a href="#!/results" class="cls-search-input" ng-style="dspl">Search</a> -->
+        <p class="cls-search-support-error">{{ search_error_message }}</p> 
+        <p class="cls-search-support">You can support {{ child_num }}</p>     
+    </form>
+</div>

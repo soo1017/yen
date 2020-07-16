@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Expires" CONTENT="0">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="Pragma" CONTENT="no-cache">
+<!--        <link rel="stylesheet" type="text/css" href="./../stylesheets/lightbox.css">-->
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/grid.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/recipients-manage.css">
+        <link rel="stylesheet" type="text/css" href="./../stylesheets/queries-recipients-manage.css">
+<!--        <link rel="stylesheet" type="text/css" href="./stylesheets/jquery.fancybox.min.css">-->
+<!--        <link rel="shortcut icon" href="./images/favicon/faveu-favicon.ico" type="image/x-icon">-->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Bungee" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--        <script>function callme() {history.go(1);}</script>-->
+<!--
+        <script type = "text/javascript" >
+            function preventBack(){window.history.forward();}
+            setTimeout("preventBack()", 0);
+            window.onunload=function(){null};
+        </script>
+-->
+        <title>YEN</title>
+    </head>
+    <body>
+
+        <section class="cls-sec-recip-manage0" id="id-sec-recip-manage0">
+            <div class="row cls-recip-manage00">
+                <a class="cls-logout" href="" title="Sign Out">Sign Out</a>
+            </div>
+            <div class="row cls-sec-recip-manage01">
+                <h2>YEN Recipients(Donors) Info Management</h2>
+            </div>
+            <div class="row cls-sec-recip-manage02">
+                <div class="col span-1-of-3 cls-span1">
+                    <div class="cls-manage02-div0 js-manage02-div0">
+                        <div id="id-recipient-info" name="recipient-info">
+                                <p class="cls-recipient-info">Recipients Info</p>
+                                <input type="text" name="recipient name" id="id-recipient-name" class="cls-recipient-name" placeholder="Recipient Name">
+
+                                <label class="cls-sexselect" for="sex selector"></label>
+                                <select name="Gender" class="cls-sex" id="id-sex">
+                                    <option value="">Gender</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
+
+                                <label class="cls-ageselect" for="age selector"></label>
+                                <select name="Age" class="cls-age" id="id-age">
+                                    <option value="">Age</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                </select>
+
+                                <input type="text" name="recipient birth" id="id-recipient-birth" class="cls-recipient-birth" placeholder="Birthday (mm/dd/yy)">
+
+                                <input type="text" name="recipient favorite" id="id-recipient-favorite" class="cls-recipient-favorite" placeholder="Favorite">
+
+                                <input type="text" name="recipient future-dream" id="id-recipient-futuredream" class="cls-recipient-futuredream" placeholder="Future Dream">
+
+                                <label class="cls-countryselect" for="country selector"></label>
+                                <select name="Country" class="cls-country" id="id-country">
+                                    <option value="">Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="Haiti">Haiti</option>
+                                </select>
+
+                                <label class="cls-donorconnected" for="donor connection"></label>
+                                <select name="Donor Connected" class="cls-donorconnected" id="id-donorconnected">
+                                    <option value="">Donor Connected?</option>
+                                    <option value="false">false</option>
+                                    <option value="true">true</option>
+                                </select>
+
+                                <input type="text" name="donor id" id="id-recipient-donorid" class="cls-recipient-donorid" placeholder="Donor ID">
+
+                                <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" id="id-picture">
+
+                                <input type="submit" value="Add a Doc" class="cls-manage02-div060-input"><br>
+                                <input type="submit" value="Modify a Doc" class="cls-manage02-modify-input">
+                                <input type="submit" value="Delete a Doc" class="cls-manage02-delete-input">
+
+                        </div>
+
+                        <div class="row2 cls-manage02-div07">
+                            <p>All fields should be filled up for "Add a Doc"<br>except for donor-related</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 cls-span2">
+                    <br><i class="ion-pause icon-manage2"></i><br>
+                    <i class="ion-pause icon-manage2"></i><br>
+                    <i class="ion-pause icon-manage2"></i><br>
+                    <i class="ion-pause icon-manage2"></i>
+                </div>
+                <div class="col span-1-of-3 cls-span3">
+                    <div class="cls-manage02-div3">
+                        <p>Please drop a .csv file to upload recipients into DB</p>
+                    </div>
+                    <div id="drop-area">
+                        <form class="my-form">
+                            <a class="select-upload" href="#" id="id-select-upload">drop .csv file</a>
+                            <input type="file" id="fileElem" multiple accept=".xlsx, .xls, .csv" onchange="handleFiles(this.files)">
+                            <label class="button" for="fileElem">Select .csv file</label>
+                        </form>
+                        <progress id="progress-bar" max=100 value=0></progress>
+                    </div>
+                    <div class="cls-instruction-div">
+                        <ul class="cls-instruction-ul">
+                            <li class="cls-instruction">Instructions of add, modify, and delete</li>
+                            <li class="cls-add">Add: need to fill all fields as much as possible except for donor-related fields(gray-colored)</li>
+                            <li class="cls-modify1">Modify: need recipient name absoulutely. fill only field(s) to be modified. They will be overwritten</li>
+                            <li class="cls-delete">Delete: need recipient name only to delete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cls-Q">
+                <div class="row cls-sec-query-p">
+                    <h3>Query a document by name or id</h3>
+                </div>
+                <div class="col span-1-of-3 cls-1span">
+                    <div class="cls-manage-query-div0 js-manage-query-div0">
+                        <p>Recipients Info</p>
+                        <div id="id-manage-query-div1" name="query-recipient-info">
+                            <input type="text" name="recipient name" id="id-query-recipient-name" class="cls-query-recipient-name" placeholder="Recipient Name"><br>
+
+                            <input type="submit" value="Query a Recip" class="cls-manage-query-input" id="id-manage-query-input"><br>
+                        </div>
+                        <div id="id-manage-query-ul" name="query-recipient-ul">
+                        </div>
+                        <p class="cls-query-p"></p>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 cls-2span">
+                    <br><i class="ion-pause icon-manage22"></i><br>
+                    <i class="ion-pause icon-manage22"></i>
+                </div>
+                <div class="col span-1-of-3 cls-3span">
+                    <div class="cls-manage-query-div3 js-manage-query-div3">
+                        <p>Donors Info</p>
+                        <div id="id-manage-query-div4" name="query-donor-info">
+                            <input type="text" name="donor name or id" id="id-query-donor-name" class="cls-query-donor-name" placeholder="Donor Name or ID"><br>
+
+                            <input type="submit" value="Query a Donor" class="cls-manage-query-input1" id="id-manage-query-input1"><br>
+                        </div>
+                        <div id="id-manage-querydonor-ul" name="query-donor-ul">
+                        </div>
+                        <p class="cls-query-d"></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col span-1-of-1 cls-5span">
+                <div class="row cls-stopdonate-div0">
+                    <h3>Stop Donation</h3>
+                </div>
+                <div class="cls-stopdonate-div1">
+                    <p>Donor Info</p>
+                    <div id="id-stopdonate-div11" name="stop-donate-info">
+                        <input type="text" name="stop donate" id="id-stopdonate" class="cls-stopdonate" placeholder="Donor Name"><br>
+                        <p>(Before stop donation, please make sure if there is only one donor by this name)</p><br>
+
+                        <input type="submit" value="Stop Donate" class="cls-stopdonate-btn"><br>
+                    </div>
+                    <div id="id-manage-stopdonate-ul" name="stopdonate-ul">
+                    </div>
+                    <p class="cls-stopdonate-p"></p>
+                </div>
+            </div>
+
+
+        </section>
+            <!--        End of 2nd Pop-Up Divisions -->
+
+        <script>
+
+            /*
+              Function to carry out the actual PUT request to S3 using the signed request from the app.
+            */
+            function toTitleCase(str) {
+                return str.replace(/\w\S*/g, function(txt){
+                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                });
+            }
+            /****/
+            function stopDonate() {
+                var stopdonate_data = {};
+                stopdonate_data.donorname = $('#id-stopdonate').val();
+                stopdonate_data.donorname = toTitleCase(stopdonate_data.donorname);
+
+                var sd_url = "/recipients/recipients-manage/stop-donate";
+                $.ajax({
+                    url: sd_url,
+                    data: stopdonate_data,
+                    type: 'POST',
+                    dataType: 'json',
+                    beforeSend: function(xhr){xhr.setRequestHeader('x-auth', sessionStorage.getItem('token'));}
+                    }).then(function(data, textStatus, jqXHR) {
+                            if (jqXHR.status == 200) {
+
+                                if($("#wrapper-stopdonate")) {
+                                    $("#wrapper-stopdonate").remove();
+                                }
+                                var el = document.getElementById('id-manage-stopdonate-ul');
+                                var container = document.createElement('ul');
+                                container.id = "wrapper-stopdonate";
+                                el.appendChild(container);
+
+                                var arr_length;
+                                if (data.recipient) {
+                                    arr_length = data.recipient.length;
+                                } else {
+                                    arr_length = 0;
+                                }
+
+                                var html = '<ul>';
+                                for(var i=1; i<=arr_length; i++){
+                                    html+= '<li id="isd-'+i+'"></li>';
+                                }
+                                html+= '</ul>';
+                                container.innerHTML = html;
+
+                                if (data.recipient) {
+                                    for (var j=1;j<=arr_length;j++) {
+                                        var n = j-1;
+                                        var temp_name = 'isd-' + j;
+                                        document.getElementById(temp_name).innerText = 'Recipient: ' + data.recipient[n].Name;
+                                    }
+                                }
+
+                                $('.cls-stopdonate-p').text('Successfully Done!');
+                            } else if (jqXHR.status == 405) {
+                                $('.cls-stopdonate-p').text('Not macthed one found!');
+                            } else {
+                               console.log('fail');
+                            }
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                            if (jqXHR.status == 200) {
+                                $('.cls-stopdonate-p').text('Successfully Done!');
+                            } else if (jqXHR.status == 405) {
+                                $('.cls-stopdonate-p').text('Not macthed one found!');
+                            } else {
+                               console.log('fail');
+                            }
+                    });
+            }
+            /****/
+            function queryDoc() {
+                var query_data = {};
+                query_data.Name = $('#id-query-recipient-name').val();
+                query_data.Name = toTitleCase(query_data.Name);
+
+                var q_url = "/recipients/recipients-manage/query-recip";
+                $.ajax({
+                    url: q_url,
+                    data: query_data,
+                    type: 'POST',
+                    dataType: 'json',
+                    beforeSend: function(xhr){xhr.setRequestHeader('x-auth', sessionStorage.getItem('token'));}
+                    }).then(function(data, textStatus, jqXHR) {
+                            if (jqXHR.status == 200) {
+//                                console.log('success');
+//                                console.log('jqXHR-then: ', jqXHR);
+//                                console.log('data-then: ', data);
+                                if($("#wrapper")) {
+                                    $("#wrapper").remove();
+                                }
+                                var el = document.getElementById('id-manage-query-ul');
+                                var container = document.createElement('ul');
+                                container.id = "wrapper";
+                                el.appendChild(container);
+
+                                var html = '<ul>';
+                                var i = 1;
+                                if (jqXHR.getResponseHeader('num')) {
+                                    i = 0;
+                                }
+                                for(i; i<=11; i++){
+                                    html+= '<li id="id-'+i+'"></li>';
+                                }
+                                html+= '</ul>';
+                                container.innerHTML = html;
+                                if (jqXHR.getResponseHeader('num')) {
+                                    document.getElementById('id-0').innerText = 'Number of Doc: ' + jqXHR.getResponseHeader('num');
+                                }
+                                document.getElementById('id-1').innerText = 'Name: ' + data.Name;
+                                document.getElementById('id-2').innerText = 'Age: ' + data.Age;
+                                document.getElementById('id-3').innerText = 'Gender: ' + data.Sex;
+                                document.getElementById('id-4').innerText = 'Birth: ' + data.Birth;
+                                document.getElementById('id-5').innerText = 'Country: ' + data.Country;
+                                document.getElementById('id-6').innerText = 'Favorite: ' + data.Favorite;
+                                document.getElementById('id-7').innerText = 'Future Dream: ' + data.FutureDream;
+                                document.getElementById('id-8').innerText = 'Picture: ' + data.Picture;
+                                document.getElementById('id-9').innerText = 'Donor Connected?: ' + data.donorConnected;
+                                document.getElementById('id-10').innerText = 'Donor ID: ' + data._donorID;
+                                document.getElementById('id-11').innerText = 'Completed?: ' + data.completed;
+                                $('.cls-query-p').text('');
+
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "Not matched one") {
+                                if($("#wrapper")) {
+                                    $("#wrapper").remove();
+                                }
+                                $('.cls-query-p').text('Not macthed one found!');
+                            } else {
+                               console.log('fail');
+                            }
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                            if (jqXHR.status == 200) {
+                                // console.log('success');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "Not matched one") {
+                                if($("#wrapper")) {
+                                    $("#wrapper").remove();
+                                }
+                                $('.cls-query-p').text('Not macthed one found!');
+                            } else {
+                                console.log('fail');
+                            }
+                    });
+            }
+            /****/
+            function queryDonorDoc() {
+                var queryDonor_data = {};
+                var regex_name = /^[a-zA-Z&.\-]+$/i;
+                if (regex_name.test($('#id-query-donor-name').val())) {  // Name
+                    queryDonor_data.donorname = $('#id-query-donor-name').val();
+                } else {
+                    queryDonor_data._id = $('#id-query-donor-name').val();
+                }
+
+                // console.log("queryDonor_data: ", queryDonor_data);
+                var qd_url = "/recipients/recipients-manage/query-donor";
+                $.ajax({
+                    url: qd_url,
+                    data: queryDonor_data,
+                    type: 'POST',
+                    dataType: 'json',
+                    beforeSend: function(xhr){xhr.setRequestHeader('x-auth', sessionStorage.getItem('token'));}
+                    }).then(function(data, textStatus, jqXHR) {
+                            if (jqXHR.status == 200) {
+                                // console.log('success');
+                                // console.log('jqXHR-then: ', jqXHR);
+                                // console.log('data-then: ', data);
+                                if($("#wrapper-donor")) {
+                                    $("#wrapper-donor").remove();
+                                }
+                                var el = document.getElementById('id-manage-querydonor-ul');
+                                var container = document.createElement('ul');
+                                container.id = "wrapper-donor";
+                                el.appendChild(container);
+
+                                var arr_length;
+                                if (data.recipient) {
+                                    arr_length = 7 + data.recipient.length;
+                                } else {
+                                    arr_length = 7;
+                                }
+
+                                var html = '<ul>';
+                                var i = 1;
+                                if (jqXHR.getResponseHeader('num')) {
+                                    i = 0;
+                                }
+                                for(i; i<=arr_length; i++){
+                                    html+= '<li id="idd-'+i+'"></li>';
+                                }
+                                html+= '</ul>';
+                                container.innerHTML = html;
+                                if (jqXHR.getResponseHeader('num')) {
+                                    document.getElementById('idd-0').innerText = 'Number of Doc: ' + jqXHR.getResponseHeader('num');
+                                }
+                                document.getElementById('idd-1').innerText = 'ID: ' + data.donor._id;
+                                document.getElementById('idd-2').innerText = 'Name: ' + data.donor.donorname;
+                                document.getElementById('idd-3').innerText = 'Onetime Payment: ' + data.donor.onetime;
+                                document.getElementById('idd-4').innerText = 'Donation Amount: ' + data.donor.donationamount;
+                                document.getElementById('idd-5').innerText = 'Recipient Connected?: ' + data.donor.recipient;
+                                document.getElementById('idd-6').innerText = 'Number of Recipient: ' + data.donor.numberofrecipient;
+                                document.getElementById('idd-7').innerText = 'Completed?: ' + data.donor.completed;
+                                if (data.recipient) {
+                                    for (var j=8;j<=arr_length;j++) {
+                                        var n = j-8;
+                                        var temp_name = 'idd-' + j;
+                                        document.getElementById(temp_name).innerText = 'Recipient: ' + data.recipient[n].Name;
+                                    }
+                                }
+                                $('.cls-query-d').text('');
+
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "Not matched one") {
+                                if($("#wrapper-donor")) {
+                                    $("#wrapper-donor").remove();
+                                }
+                                $('.cls-query-d').text('Not macthed one found!');
+                            } else {
+                               console.log('fail');
+                            }
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                            if (jqXHR.status == 200) {
+                                // console.log('success');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "Not matched one") {
+                                if($("#wrapper-donor")) {
+                                    $("#wrapper-donor").remove();
+                                }
+                                $('.cls-query-d').text('Not macthed one found!');
+                            } else {
+                                console.log('fail');
+                            }
+                    });
+            }
+            /****/
+            function deleteDoc() {
+                var delete_data = {};
+                delete_data.Name = $('#id-recipient-name').val();
+                delete_data.Name = toTitleCase(delete_data.Name);
+
+                var q_url = "/recipients/recipients-manage/delete-recip";
+                $.ajax({
+                    url: q_url,
+                    data: delete_data,
+                    type: 'POST',
+                    dataType: 'json',
+                    beforeSend: function(xhr){xhr.setRequestHeader('x-auth', sessionStorage.getItem('token'));}
+                    }).then(function(data, textStatus, jqXHR) {
+                            if (jqXHR.status == 200) {
+                                $('.cls-manage02-div07 p').text('Successfully Deleted!');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "None Found") {
+                                $('.cls-manage02-div07 p').text('Not macthed one found!');
+                            } else {
+                               console.log('fail');
+                            }
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                            if (jqXHR.status == 200) {
+                                $('.cls-manage02-div07 p').text('Successfully Deleted!');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "None Found") {
+                                $('.cls-manage02-div07 p').text('Not macthed one found!');
+                            } else {
+                                console.log('fail');
+                            }
+                    });
+            }
+            /****/
+            function modifyDoc() {
+                var modify_data = {};
+                const files = document.getElementById('id-picture').files;
+                const file = files[0];
+                // console.log("hihi: ", file);
+                modify_data.Name = $('#id-recipient-name').val();
+                modify_data.Name = toTitleCase(modify_data.Name);
+                if ($('#id-age').val()) {
+                    modify_data.Age = $('#id-age').val();
+                }
+                if ($('#id-sex').val()) {
+                    modify_data.Sex = $('#id-sex').val();
+                }
+                if ($('#id-recipient-birth').val()) {
+                    modify_data.Birth = $('#id-recipient-birth').val();
+                }
+                if ($('#id-recipient-favorite').val()) {
+                    modify_data.Favorite = $('#id-recipient-favorite').val();
+                }
+                if ($('#id-recipient-futuredream').val()) {
+                    modify_data.FutureDream = $('#id-recipient-futuredream').val();
+                }
+                if ($('#id-country').val()) {
+                    modify_data.Country = $('#id-country').val();
+                }
+                if (file != undefined) {
+                    modify_data.Picture = file.name;
+                }
+                if ($('#id-donorconnected').val()) {
+                    modify_data.donorConnected = $('#id-donorconnected').val();
+                    if($('#id-donorconnected').val() == "false") {
+                        modify_data._donorID = null;
+                    } else {
+                        modify_data._donorID = $('#id-recipient-donorid').val();
+                    }
+                }
+//                if ($('#id-recipient-donorid').val()) {
+//                    modify_data._donorID = $('#id-recipient-donorid').val();
+//                }
+
+                var m_url = "/recipients/recipients-manage/modify-recip";
+                $.ajax({
+                    url: m_url,
+                    data: modify_data,
+                    type: 'POST',
+                    dataType: 'json',
+                    beforeSend: function(xhr){xhr.setRequestHeader('x-auth', sessionStorage.getItem('token'));}
+                    }).then(function(data, textStatus, jqXHR) {
+                            if (jqXHR.status == 200) {
+                                $('.cls-manage02-div07 p').text('Successfully Modified!');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "None Found") {
+                                $('.cls-manage02-div07 p').text('Not macthed one found!');
+                            } else {
+                               console.log('fail');
+                            }
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                            if (jqXHR.status == 200) {
+                                $('.cls-manage02-div07 p').text('Successfully Modified!');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "None Found") {
+                                $('.cls-manage02-div07 p').text('Not macthed one found!');
+                            } else {
+                                console.log('fail');
+                            }
+                    });
+            }
+            /****/
+            function ajaxExecution() {
+                var recipient_data = {};
+                const files = document.getElementById('id-picture').files;
+                const file = files[0];
+                recipient_data.Name = $('#id-recipient-name').val();
+                recipient_data.Name = toTitleCase(recipient_data.Name);
+                recipient_data.Age = $('#id-age').val();
+                recipient_data.Sex = $('#id-sex').val();
+                recipient_data.Birth = $('#id-recipient-birth').val();
+                recipient_data.Favorite = $('#id-recipient-favorite').val();
+                recipient_data.FutureDream = $('#id-recipient-futuredream').val();
+                recipient_data.Country = $('#id-country').val();
+//                recipient_data.donorConnected = $('#id-donorconnected').val();
+//                recipient_data._donorID = $('#id-recipient-donorid').val();
+                recipient_data.Picture = file.name;
+
+                var i_url = "/recipients/recipients-manage/upload";
+                $.ajax({
+                    url: i_url,
+                    data: recipient_data,
+                    type: 'POST',
+                    dataType: 'json',
+                    beforeSend: function(xhr){xhr.setRequestHeader('x-auth', sessionStorage.getItem('token'));}
+                    }).then(function(data, textStatus, jqXHR) {
+                            if (jqXHR.status == 200) {
+                                document.location.href = "https://www.youthempoweringnation.org/recipients/recipients-manage";
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "Duplicated Document Found") {
+                                $('.cls-manage02-div07 p').text('Doc with this name already exists');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "A doc not saved") {
+                                $('.cls-manage02-div07 p').text('Please talk with YEN techie');
+                            } else {
+                               console.log('fail');
+                            }
+                    }).fail(function(jqXHR, textStatus, errorThrown) {
+                            if (jqXHR.status == 200) {
+                                // console.log('success');
+                                document.location.href = "https://www.youthempoweringnation.org/recipients/recipients-manage";
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "Duplicated Document Found") {
+                                $('.cls-manage02-div07 p').text('Doc with this name already exists');
+                            } else if (jqXHR.status == 405 && jqXHR.responseText == "A doc not saved") {
+                                $('.cls-manage02-div07 p').text('Please talk with YEN techie');
+                            } else {
+                                console.log('fail');
+                            }
+                    });
+            }
+
+            function uploadFile1(file, signedRequest, url, boolean1){
+                const xhr = new XMLHttpRequest();
+                xhr.open('PUT', signedRequest);
+                xhr.onreadystatechange = () => {
+                    if(xhr.readyState === 4){
+                        if(xhr.status === 200){
+                            ajaxExecution();
+                            // console.log("successful uploadFile");
+                        }
+                        else{
+                            return false;
+                            alert('Could not upload file.');
+                        }
+                    }
+                };
+                xhr.send(file);
+            }
+            /*
+              Function to get the temporary signed request from the app.
+              If request successful, continue to upload the file using this signed
+              request.
+            */
+            function getSignedRequest(file, boolean1){
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', `/recipients/recipients-manage/sign-s3?file-name=${file.name}&file-type=${file.type}`);
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState === 4){
+                        if(xhr.status === 200){
+                            const response = JSON.parse(xhr.responseText);
+                            uploadFile1(file, response.signedRequest, response.url);
+                        }
+                        else{
+                            alert('Could not get signed URL.');
+                        }
+                    }
+                };
+                xhr.send();
+            }
+
+            /*
+                Bind listeners when the page loads.
+            */
+            function initUpload(){
+                const files = document.getElementById('id-picture').files;
+                const file = files[0];
+                // console.log("file: ", file);
+                if(file == null){
+                    return false;
+                    alert('No file selected.');
+                }
+                // console.log("successfuk initUpload");
+                return getSignedRequest(file);
+            };
+
+            //////////////////////////////////////////////////////////////
+            $(document).ready(function() {
+                var input_recip = document.getElementById("id-query-recipient-name");
+                var input_donor = document.getElementById("id-query-donor-name");
+
+                // Execute a function when the user releases a key on the keyboard
+                input_recip.addEventListener("keyup", function(event) {
+                  // Cancel the default action, if needed
+                    event.preventDefault();
+                  // Number 13 is the "Enter" key on the keyboard
+                    if (event.keyCode === 13) {
+                    // Trigger the button element with a click
+                        document.getElementById("id-manage-query-input").click();
+                    }
+                });
+
+                input_donor.addEventListener("keyup", function(event) {
+                  // Cancel the default action, if needed
+                    event.preventDefault();
+                  // Number 13 is the "Enter" key on the keyboard
+                    if (event.keyCode === 13) {
+                    // Trigger the button element with a click
+                        document.getElementById("id-manage-query-input1").click();
+                    }
+                });
+
+                $('.cls-manage02-div060-input').on('click', function() {
+                    initUpload();
+                });
+                $('.cls-manage-query-input').on('click', function() {
+                    queryDoc();
+                });
+                $('.cls-manage-query-input1').on('click', function() {
+                    queryDonorDoc();
+                });
+
+                $('.cls-manage02-delete-input').on('click', function() {
+                    if ($('.cls-manage02-delete-input').prop('value') == 'Delete a Doc') {
+                        $('.cls-manage02-delete-input').prop('value', 'Confirm');
+                    } else if ($('.cls-manage02-delete-input').prop('value') == 'Confirm') {
+                        deleteDoc();
+                        $('.cls-manage02-delete-input').prop('value', 'Delete a Doc');
+                    } else {
+                        // Do nothing
+                    }
+                });
+                $('.cls-manage02-modify-input').on('click', function() {
+                    if ($('.cls-manage02-modify-input').prop('value') == 'Modify a Doc') {
+                        $('.cls-manage02-modify-input').prop('value', 'Confirm');
+                    } else if ($('.cls-manage02-modify-input').prop('value') == 'Confirm') {
+                        modifyDoc();
+                        $('.cls-manage02-modify-input').prop('value', 'Modify a Doc');
+                    } else {
+                        // Do nothing
+                    }
+                });
+                $('.cls-stopdonate-btn').on('click', function() {
+                    if ($('.cls-stopdonate-btn').prop('value') == 'Stop Donate') {
+                        $('.cls-stopdonate-btn').prop('value', 'Are You Sure?');
+                    } else if ($('.cls-stopdonate-btn').prop('value') == 'Are You Sure?') {
+                        stopDonate();
+                        $('.cls-stopdonate-btn').prop('value', 'Stop Donate');
+                    } else {
+                        // Do nothing
+                    }
+                });
+            });
+            ////////////////////////////////////////////
+
+            // ************************ Drag and drop ***************** //
+                var dropArea = document.getElementById('drop-area');
+                var uploadProgress = [];
+                var progressBar = document.getElementById('progress-bar');
+
+                // Functions
+                function preventDefaults (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                function highlight(e) {
+                    dropArea.classList.add('highlight');
+                }
+                function unhighlight(e) {
+                    dropArea.classList.remove('active');
+                }
+                //
+                function handleDrop(e) {
+                    var dt = e.dataTransfer;
+                    var files = dt.files;
+                    // console.log("files: ", files);
+
+                    handleFiles(files);
+                }
+                function initializeProgress(numFiles) {
+                    progressBar.value = 0
+                    uploadProgress = []
+
+                    for(let i = numFiles; i > 0; i--) {
+                        uploadProgress.push(0)
+                    }
+                }
+
+                function updateProgress(fileNumber, percent) {
+                    uploadProgress[fileNumber] = percent
+                    let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
+                    // console.log('update', fileNumber, percent, total)
+                    progressBar.value = total
+                }
+
+                function handleFiles(files) {
+                    files = [...files];
+                    initializeProgress(files.length)
+                    // console.log("before uploadFile");
+                    files.forEach(uploadFile);
+                    // console.log("after uploadFile");
+//                    files.forEach(previewFile)
+                }
+
+                function previewFile(file) {
+                    let reader = new FileReader()
+                    reader.readAsDataURL(file)
+                    reader.onloadend = function() {
+                        let img = document.createElement('img')
+                        img.src = reader.result
+//                        document.getElementById('gallery').appendChild(img)
+                    }
+                }
+
+                function uploadFile(file, i) {
+                    var url = 'https://www.youthempoweringnation.org/recipients/recipients-manage/upload-file';
+//                    var url = 'https://api.cloudinary.com/v1_1/joezim007/image/upload'
+                    var xhr = new XMLHttpRequest();
+                    var formData = new FormData();
+                    xhr.open('POST', url, true);
+                    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                    xhr.setRequestHeader('x-auth', sessionStorage.getItem('token'));
+
+                    // Update progress (can be used to show progress indicator)
+                    xhr.upload.addEventListener("progress", function(e) {
+                        updateProgress(i, (e.loaded * 100.0 / e.total) || 100)
+                    })
+
+                    xhr.addEventListener('readystatechange', function(e) {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            updateProgress(i, 100) // <- Add this
+                            document.location.href = "https://www.youthempoweringnation.org/recipients/recipients-manage";
+                        }
+                        else if (xhr.readyState == 4 && xhr.status != 200) {
+                            // Error. Inform the user
+                        }
+                    })
+
+                    // console.log("file: ", file);
+
+//                    formData.append('upload_preset', 'ujpu6gyk')
+                    formData.append('file', file)
+                    for (var pair of formData.entries()) {
+                        // console.log(pair[0].name);
+                    }
+                    xhr.send(formData)
+                }
+
+                // Prevent default drag behaviors
+                dropArea.addEventListener('dragenter', preventDefaults, false);
+                dropArea.addEventListener('dragover', preventDefaults, false);
+                dropArea.addEventListener('dragleave', preventDefaults, false);
+                dropArea.addEventListener('drop', preventDefaults, false);
+
+                // Highlight drop area when item is dragged over it
+                dropArea.addEventListener('dragenter', highlight, false);
+                dropArea.addEventListener('dragover', highlight, false);
+
+                // Unhighlight drop area when dragging item is over or stop
+                dropArea.addEventListener('dragleave', unhighlight, false);
+                dropArea.addEventListener('drop', unhighlight, false);
+
+                // Handle dropped files
+                dropArea.addEventListener('drop', handleDrop, false);
+
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="./../javascripts/jquery.waypoints.min.js"></script>
+<!--    <script src="./../javascripts/lightbox.js"></script>-->
+    <script src="./../javascripts/recipients-manage.js"></script>
+    </body>
+</html>

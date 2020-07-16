@@ -1,0 +1,515 @@
+
+/* Big Tablet to 1200px */
+@media only screen and (max-width: 1200px) {
+    .cls-maintext-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%; }
+    .main-nav { display: block; }
+}
+
+/* Small Tablet to Big Tablet */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px; }
+
+    .cls-about {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .main-nav { display: block; }
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-step { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+    .cls-phone { width: 100%; }
+    .icon-big {
+        font-size: 250%;
+        margin-bottom: 8px;
+    }
+    .box-image img {
+        width: 90%;
+        height: 150px;
+        margin-top: 50px;
+    }
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+    .contact-form { width: 80%; }
+    .cls-sec-donate .row h2 {
+        font-size: 160%;
+    }
+    .cls-donate1 .col,
+    .cls-donate1 .col img,
+    .cls-donate2 .col,
+    .cls-donate2 .col img {
+        height: 250px;
+    }
+    .cls-donate-comment1,
+    .cls-donate-comment2 {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .cls-donate-comment1 p,
+    .cls-donate-comment2 p {
+        font-size: 90%;
+    }
+    .cls-sec2-donate11 {
+        margin-top: 20px;
+    }
+    .cls-sec2-donate1 {
+        padding-top: 0px;
+/*        padding-bottom: 0px;*/
+/*        min-height: 100%;*/
+    }
+    .cls-sec2-donate131 {
+        height: 5%;
+    }
+    .cls-sec2-donate14 {
+        margin-top: 4%;
+    }
+    .cls-sec2-credit1,
+    .cls-sec2-credit2,
+    .cls-sec2-bank1,
+    .cls-sec2-bank2 {
+        padding-top: 10px;
+    }
+    .cls-sec2-credit11,
+    .cls-sec2-credit21 {
+        margin-top: 30px;
+    }
+    .cls-sec2-bank11,
+    .cls-sec2-bank21 {
+        margin-top: 30px;
+    }
+    .cls-sec2-thank .cls-sec2-thank10 h2 {
+        font-size: 140%;
+    }
+    .cls-5span {
+        width: 80%;
+        margin: 5% 8.5% 3% 11.5%;
+    }
+    .cls-stopdonate-div0:before {
+        width: 60%;
+        margin: 2% auto 2% auto;
+    }
+    .cls-stopdonate-div1 input[type="text"] {
+        width: 60%;
+    }
+    .cls-stopdonate-btn {
+        width: 40%;
+    }
+}
+
+/* Small Phone & Tablet from 480px to 767px */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+
+    .row { padding: 0 3%;}
+    .cls-maintext-box { padding: 0 4%; }
+    .cls-phone { width: 70%; }
+
+    .col { width: 100%; }
+
+    .box-image img {
+        width: 50%;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
+    .main-nav {
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .main-nav11 {
+        float: left;
+        list-style: none;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 80%;
+    }
+    .main-nav11 li {
+        padding: 7px 0;
+    }
+    .main-nav11 li a:link,
+    .main-nav11 li a:visited {
+        text-decoration: none;
+        color: #fff;
+/*        color: #e67e22;*/
+        padding: 7px 0;
+        text-transform: uppercase;
+    }
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 7px 0;
+    }
+    .sticky .cls-logo {
+        margin: 20px 0 20px 0;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 7px 0;
+    }
+    .sticky .main-nav li a:hover,
+    .sticky .main-nav li a:active {
+        border-bottom: none;
+    }
+    .sticky .main-nav1 li a:hover,
+    .sticky .main-nav1 li a:active {
+        border-bottom: none;
+    }
+    .sticky .main-nav11 li a:link,
+    .sticky .main-nav11 li a:visited {
+        color: #e67e22;
+    }
+
+    .cls-short-p {
+        margin-bottom: 43px;
+    }
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+
+    .cls-about {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .footer-nav,
+    .social-links {
+        float: none;
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .footer-nav {
+        margin-bottom: 15px;
+    }
+    footer .row {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .steps-box:first-child {
+        /*margin-top: 60px;*/
+        text-align: center;
+    }
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+    .cls-donate1 .col,
+    .cls-donate2 .col{
+        text-align: center;
+    }
+    .cls-donate1 .col img,
+    .cls-donate2 .col img {
+        width: 70%;
+    }
+    .cls-donate-comment1,
+    .cls-donate-comment2 {
+        text-align: center;
+    }
+    .cls-donate-comment1 p,
+    .cls-donate-comment2 p {
+        font-size: 80%;
+    }
+    .cls-donate1 .col:last-child,
+    .cls-donate2 .col:first-child {
+        height: 150px;
+    }
+    .cls-sec2-donate10 .col {
+        width: 32%;
+    }
+    .cls-sec2-donate12 {
+        text-align: center;
+    }
+    .cls-sec2-donate12 .cls-donate12-div0 {
+        margin: 5px auto;
+        width: 180px;
+        display: block;
+    }
+    .cls-sec2-donate12 .cls-donate12-div1, 
+    .cls-sec2-donate12 .cls-donate12-div2 {
+        display: inline-block;
+        height: 50px;
+    }
+    .cls-sec2-donate131 {
+        height: 3%;
+    }
+    .cls-donate12-div0:before {
+        content: '$';
+        position: absolute;
+        font-size: 150%;
+        top: 10px;;
+        left: 3px;
+        z-index: 1;
+    /*    margin-right: 10px;*/
+    }
+    .cls-sec2-donate132:after {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .cls-sec2-donate14 {
+        margin-top: 4%;
+    }
+    .cls-sec2-donate11 {
+        margin-top: 30px;
+    }
+    .cls-sec2-credit1 {
+        padding-top: 20px;
+    }
+    .cls-sec2-credit11 {
+        margin-top: 30px;
+    }
+    .cls-sec2-credit10 .col {
+        width: 32%;
+    }
+    .cls-sec2-credit12 {
+        margin-bottom: 30px;
+    }
+    .cls-sec2-credit12 .cls-credit12-div0 input, 
+    .cls-sec2-credit12 .cls-credit12-div1 input, 
+    .cls-sec2-credit12 .cls-credit12-div3 input, 
+    .cls-sec2-credit12 .cls-credit12-div4 input {
+        width: 380px;
+    }
+    .cls-sec2-credit12 .cls-credit12-div2 input {
+        width: 188px;
+    }
+    .cls-sec2-credit20 .col {
+        width: 32%;
+    }
+    .cls-sec2-credit22 .cls-credit22-div0 input, 
+    .cls-sec2-credit22 .cls-credit22-div1 input, 
+    .cls-sec2-credit22 .cls-credit22-div2 input, 
+    .cls-sec2-credit22 .cls-credit22-div3 input, 
+    .cls-sec2-credit22 .cls-credit22-div4 select, 
+    .cls-sec2-credit22 .cls-credit22-div5 input, 
+    .cls-sec2-credit22 .cls-credit22-div6 input {
+        width: 400px;
+        font-size: 100%;
+    }
+    .cls-sec2-bank10 .col,
+    .cls-sec2-bank20 .col {
+        width: 32%;
+    }
+    .cls-sec2-bank12 .cls-bank12-div0 input, 
+    .cls-sec2-bank12 .cls-bank12-div1 input, 
+    .cls-sec2-bank12 .cls-bank12-div2 input, 
+    .cls-sec2-bank12 .cls-bank12-div3 input, 
+    .cls-sec2-bank12 .cls-bank12-div4 input {
+        width: 400px;
+        font-size: 100%;
+    }
+    .cls-sec2-bank22 .cls-bank22-div0 input, 
+    .cls-sec2-bank22 .cls-bank22-div1 input, 
+    .cls-sec2-bank22 .cls-bank22-div2 input,
+    .cls-sec2-bank22 .cls-bank22-div4 select,
+    .cls-sec2-bank22 .cls-bank22-div3 input, 
+    .cls-sec2-bank22 .cls-bank22-div5 input, 
+    .cls-sec2-bank22 .cls-bank22-div6 input {
+        width: 400px;
+        font-size: 100%;
+    }
+    .cls-sec2-thank .cls-sec2-thank10 h2 {
+        font-size: 130%;
+    }
+    .cls-5span {
+        width: 80%;
+        margin: 5% 10% 3% 10%;
+    }
+    .cls-stopdonate-div0:before {
+        width: 50%;
+        margin: 2% auto 2% auto;
+    }
+    .cls-stopdonate-div1 input[type="text"] {
+        width: 50%;
+    }
+    .cls-stopdonate-btn {
+        width: 35%;
+    }
+}
+
+/* Small Phone from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section { padding: 25px 0; }
+    .main-nav {
+        margin-left: 5px;
+    }
+    .main-nav11 {
+        margin-left: 10px;
+    }
+    .footer-nav li {
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .social-links li {
+        margin: 15px 10px;
+    }
+    .contact-form {width: 100%; }
+    .cls-donate1 .col,
+    .cls-donate2 .col{
+        height: 180px;
+    }
+    .cls-donate1 .col img,
+    .cls-donate2 .col img {
+        width: 70%;
+        height: 180px;
+    }
+    .cls-donate2 {
+        margin-top: 20px;
+    }
+    .cls-donate-comment1,
+    .cls-donate-comment2 {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    .cls-sec2-donate132:after {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .cls-sec2-donate11 {
+        margin-top: 30px;
+    }
+    .cls-sec2-donate10 .col {
+        width: 32%;
+    }
+    .cls-sec2-donate131 {
+        height: 5%;
+    }
+    .col {
+        display: block;
+        float: left;
+        margin: 1% 0 1% 1.6%;
+    }
+    .cls-sec2-credit11 {
+        margin-top: 35px;
+    }
+    .cls-sec2-credit12 .cls-credit12-div0 input, 
+    .cls-sec2-credit12 .cls-credit12-div1 input, 
+    .cls-sec2-credit12 .cls-credit12-div2 input, 
+    .cls-sec2-credit12 .cls-credit12-div3 input, 
+    .cls-sec2-credit12 .cls-credit12-div4 input {
+        font-size: 100%;
+    }
+    .cls-sec2-credit12 .cls-credit12-div0 input, 
+    .cls-sec2-credit12 .cls-credit12-div1 input, 
+    .cls-sec2-credit12 .cls-credit12-div2 input, 
+    .cls-sec2-credit12 .cls-credit12-div3 input, 
+    .cls-sec2-credit12 .cls-credit12-div4 input {
+        width: 350px;
+    }
+/*
+    .cls-sec2-credit12 .cls-credit12-div2 input:first-child {
+        width: 350px;
+    }
+*/
+    .cls-sec2-credit12 .cls-credit12-div2 input.cls-cvv {
+        width: 312px;
+    }
+    .cls-sec2-credit12 .cls-credit12-div2 {
+        text-align: center;
+        display: block;
+        padding-left: 0;
+    }
+    .cls-sec2-credit12 .cls-credit12-div2 input:first-child {
+        margin-bottom: 5px;
+    }
+    .cls-credit12-div2 a i {
+        line-height: 10px;
+    }
+    .cls-sec2-credit22 .cls-credit22-div0 input, 
+    .cls-sec2-credit22 .cls-credit22-div1 input, 
+    .cls-sec2-credit22 .cls-credit22-div2 input, 
+    .cls-sec2-credit22 .cls-credit22-div3 input, 
+    .cls-sec2-credit22 .cls-credit22-div4 select, 
+    .cls-sec2-credit22 .cls-credit22-div5 input, 
+    .cls-sec2-credit22 .cls-credit22-div6 input {
+        width: 350px;
+        font-size: 100%;
+    }
+    .cls-donate-credit {
+        height: 42Px;
+        width: 200px;
+        font-size: 17px;
+        padding-top: 9px;
+        padding-bottom: 5px;
+    }
+    .cls-donate-credit:link, 
+    .cls-donate-credit:visited {
+        padding-top: 9px;
+        padding-bottom: 5px;
+    }
+    .cls-sec2-credit21 {
+        margin-top: 30px;
+    }
+    .cls-sec2-bank12 .cls-bank12-div0 input, 
+    .cls-sec2-bank12 .cls-bank12-div1 input, 
+    .cls-sec2-bank12 .cls-bank12-div2 input, 
+    .cls-sec2-bank12 .cls-bank12-div3 input, 
+    .cls-sec2-bank12 .cls-bank12-div4 input {
+        width: 350px;
+        font-size: 100%;
+    }
+    .cls-sec2-bank22 .cls-bank22-div0 input, 
+    .cls-sec2-bank22 .cls-bank22-div1 input, 
+    .cls-sec2-bank22 .cls-bank22-div2 input,
+    .cls-sec2-bank22 .cls-bank22-div4 select,
+    .cls-sec2-bank22 .cls-bank22-div3 input, 
+    .cls-sec2-bank22 .cls-bank22-div5 input, 
+    .cls-sec2-bank22 .cls-bank22-div6 input {
+        width: 350px;
+        font-size: 100%;
+    }
+    .cls-donate-bank {
+        height: 42Px;
+        width: 200px;
+        font-size: 17px;
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+    .cls-donate-bank:link, 
+    .cls-donate-bank:visited {
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+    .cls-sec2-thank .cls-sec2-thank10 h2 {
+        font-size: 120%;
+    }
+    .cls-5span {
+        width: 90%;
+        margin: 5% 5% 3% 5%;
+    }
+    .cls-stopdonate-div0:before {
+        width: 60%;
+        margin: 2% auto 2% auto;
+    }
+    .cls-stopdonate-div1 input[type="text"] {
+        width: 60%;
+    }
+    .cls-stopdonate-btn {
+        width: 40%;
+    }
+}

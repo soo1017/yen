@@ -1,0 +1,131 @@
+
+/* Big Tablet to 1200px */
+@media only screen and (max-width: 1200px) {
+    
+}
+
+/* Small Tablet to Big Tablet */
+@media only screen and (max-width: 1023px) {
+    .panel-body-text p {
+        font-size: 75%;
+    }
+    .panel-body {
+        height: 154px;
+    }
+    .panel-body .panel-body-img img {
+        width: 126px !important;
+        height: 126px !important;
+    }
+    .panel-body .panel-body-img {
+        margin: 12px 6% 12px 3%;
+        width: 130px;
+        height: 130px;
+    }
+    .panel-body-text {
+        padding-left: 3%;
+        margin-top: 10px;
+    }
+    .container {
+        max-width: 97%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .panel-body-text p {
+        font-size: 70%;
+    }
+    .panel-body {
+        height: 150px;
+    }
+    .panel-body .panel-body-img img {
+        width: 126px !important;
+        height: 126px !important;
+    }
+    .panel-body .panel-body-img {
+        margin: 10px 3% 10px 3%;
+        width: 130px;
+        height: 130px;
+    }
+    .panel-body-text {
+        padding-left: 2%;
+        margin-top: 10px;
+    }
+    .container {
+        max-width: 97%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 97%;
+    }
+}
+
+/* Small Phone & Tablet from 480px to 767px */
+@media only screen and (max-width: 767px) {
+    .cls-result {
+        width: 100%;
+        float: none;
+    }
+    .panel-body-text p {
+        font-size: 75%;
+    }
+    .panel-body {
+        height: 150px;
+    }
+    .panel-body .panel-body-img img {
+        width: 116px !important;
+        height: 116px !important;
+    }
+    .panel-body .panel-body-img {
+        margin: 15px 10% 15px 10%;
+        width: 120px;
+        height: 120px;
+    }
+    a.cls-back {
+        width: 150px;
+        font-size: 90%;
+    }
+    .container {
+        width: 97%;
+    }
+    .cls-result {
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 97%;
+    }
+}
+/* Small Phone from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    a.cls-back {
+        width: 150px;
+        font-size: 75%;
+    }
+    .panel-body-text p {
+        font-size: 70%;
+    }
+    .panel-body {
+        height: 140px;
+    }
+    .panel-body .panel-body-img img {
+        width: 106px !important;
+        height: 106px !important;
+    }
+    .panel-body .panel-body-img {
+        margin: 15px 10% 15px 10%;
+        width: 120px;
+        height: 120px;
+    }
+    .container {
+        width: 97%;
+    }
+    .cls-result {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+}
